@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdio>
 
 /**
  * simple_print_buffer - prints buffer in hexa
@@ -7,8 +7,7 @@
  * @size: the size of the memory to print
  *
  * Return: Nothing.
- */
-void simple_print_buffer(char *buffer, unsigned int size)
+ */void simple_print_buffer(char *buffer, unsigned int size)
 {
 	unsigned int i;
 
@@ -42,6 +41,6 @@ int main(void)
 	simple_print_buffer(buffer, 98);
 	_memcpy(buffer + 50, buffer2, 10);
 	printf("-------------------------------------------------\n");
-	simple_print_buffer(buffer, 98);
+	simple_print_buffer(buffer, 98)
 	return (0);
 }
