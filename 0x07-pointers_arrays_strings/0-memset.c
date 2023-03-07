@@ -8,25 +8,24 @@
  * Return: pointer
  */
 
-char *_memset(char *s, char b, unsigned int n);
+char *_memset(char *s, char *b, unsigned int n);
 
 /**
- * *_memset - function definition
+ * *_memset - funtion definition
  * @s: pointer to a constant
  * @b: constant to be used
  * @n: maximum number of bytes
- * Description: fills a memory address with constant byte
+ * Description: fills a memory address with constant bytes
  * Return: pointer s
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char *b, unsigned int)
 {
-	unsigned int index;
-
+	unsigned int index
 	for (index = 0; n > 0; index++)
 	{
 		s[index] = b;
 		n--;
 	}
-	return (s);
+	return (s)
 }
